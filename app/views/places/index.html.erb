@@ -12,8 +12,8 @@
       <div class="card text-center">
         <div class="card-body p-5">
           <h5 class="card-title h2"> <span class="font-weight-bold"> <%= place.id %> </span> • <%= place.name %> </h5>
-          <img src="app/assets/images/1.jpg" alt="Lieux">
-          <p class="card-text"> <%= place.description %> </p>
+          <img class="img-fluid" src="http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2018/05/visite-guidee-de-la-felicita-a-station-f_0.jpg" alt="">
+           <p class="card-text"> <%= place.description %> </p>
           <%= link_to "Afficher le lieu", place_path(place.id), class:"btn btn-outline-dark btn-lg"%><br>
         </div>
       </div>
