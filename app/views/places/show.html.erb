@@ -1,0 +1,21 @@
+<div class="jumbotron-fluid">
+  <div class="container">
+    <header class="p-5 text-center">
+    <h1 class="display-3"> <%= @place.name %> </h1>
+    <h2 class="m-4"> <%= @place.description %> </h2>
+    <div class="picture">
+      <p><%=@place.id%></p>
+    </div>
+    </header>
+
+    <div class="container mx-auto p-5 bg-light">
+      <p class="h5"> Le lieu : <%= @place.name %></p>
+      <p class="h5"> Description : <%= @place.description %></p>
+      <p class="h5"> Horaires d'ouverture : <%= @place.opening_hours %></p>
+      <p class="h5"> Commentaire : <%= @place.comment %></p>
+    </div>
+    <div class="text-center my-5">
+      <%= link_to "Retourner à l'index des lieux", root_path, class:"btn btn-outline-dark btn-lg my-5" %>
+    </div>
+  </div>
+</div>

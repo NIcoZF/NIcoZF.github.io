@@ -1,0 +1,25 @@
+<div class="jumbotron mb-0 text-center">
+  <h1>La bible du Paris pour Digital Nomads</h1>
+  <hr class="my-3">
+</div>
+
+<div class="bg-light p-5">
+
+  <div class="container">
+    <h4 class="text-center pb-3 text">Nos lieux répertoriés...</h4>
+    <div class="card-columns">
+      <% @places.each do |place| %>
+      <div class="card text-center">
+        <div class="card-body p-5">
+          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= place.id %> </span> • <%= place.name %> </h5>
+          <img src="app/assets/images/1.jpg" alt="Lieux">
+          <p class="card-text"> <%= place.description %> </p>
+          <%= link_to "Afficher le lieu", place_path(place.id), class:"btn btn-outline-dark btn-lg"%><br>
+        </div>
+      </div>
+      <% end %>
+    </div>
+
+  </div>
+
+</div>
