@@ -1,0 +1,9 @@
+<div class="container text-center p-5 my-5 bg-light">
+  <h1>Liste des participants :</h1>
+  <p>
+    <% @attendances.each do |attendee| %>
+      <h3> <%= attendee.user.first_name %> </h3>
+    <% end %>
+  </p>
+  <%= link_to "Editer l'évènement", edit_event_path(@event.id), class:"btn btn-primary btn-lg" %>
+</div>
