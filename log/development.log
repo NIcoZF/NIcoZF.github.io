@@ -4542,3 +4542,98 @@ Processing by PlacesController#index as HTML
 Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mPlace Create (0.9ms)[0m  [1m[32mINSERT INTO "places" ("name", "description", "opening_hours", "comment") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "La Felicita"], ["description", "Le rendez-vous de la Startup Nation"], ["opening_hours", "9h - 21h"], ["comment", "Très bruyant à partir de 18h"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mPlace Create (2.0ms)[0m  [1m[32mINSERT INTO "places" ("name", "description", "opening_hours", "comment") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bibliothèque Nationale de France"], ["description", "Le rendez-vous de chercheurs"], ["opening_hours", "9h - 21h"], ["comment", "Attention à éviter l'affluence et la file d'attente de 10h"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPlace Create (0.3ms)[0m  [1m[32mINSERT INTO "places" ("name", "description", "opening_hours", "comment") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "La Gaité"], ["description", "Le rendez-vous des geeks"], ["opening_hours", "9h - 19h"], ["comment", "La musique est assez forte au niveau de l'espace café"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mPlace Create (0.4ms)[0m  [1m[32mINSERT INTO "places" ("name", "description", "opening_hours", "comment") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Numa"], ["description", "Le rendez-vous de chercheurs"], ["opening_hours", "9h - 20h"], ["comment", "Attention à la panne d'oreiller, peu d'espace disponible donc après 9h ce n'est pas la peine d'essayer"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+Started GET "/" for 127.0.0.1 at 2019-02-28 16:05:06 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nico/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 456ms (Views: 436.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places/6" for 127.0.0.1 at 2019-02-28 16:05:09 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPlace Load (1.4ms)[0m  [1m[34mSELECT  "places".* FROM "places" WHERE "places"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:8
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 111ms (Views: 66.3ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/places/5" for 127.0.0.1 at 2019-02-28 16:05:13 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPlace Load (0.6ms)[0m  [1m[34mSELECT  "places".* FROM "places" WHERE "places"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:8
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 103ms (Views: 96.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/places/4" for 127.0.0.1 at 2019-02-28 16:05:22 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPlace Load (2.0ms)[0m  [1m[34mSELECT  "places".* FROM "places" WHERE "places"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:8
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 70ms (Views: 62.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/places/3" for 127.0.0.1 at 2019-02-28 16:05:34 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlace Load (0.5ms)[0m  [1m[34mSELECT  "places".* FROM "places" WHERE "places"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:8
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 80ms (Views: 74.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2019-02-28 16:05:40 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.4ms)[0m  [1m[34mSELECT  "places".* FROM "places" WHERE "places"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:8
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 114ms (Views: 109.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/2" for 127.0.0.1 at 2019-02-28 16:05:42 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlace Load (1.4ms)[0m  [1m[34mSELECT  "places".* FROM "places" WHERE "places"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:8
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 87ms (Views: 78.7ms | ActiveRecord: 1.4ms)
+
+

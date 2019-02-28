@@ -9,3 +9,7 @@
 Place.create!(name: "La Felicita", description: "Le rendez-vous de la Startup Nation", opening_hours: "9h - 21h", comment: "Très bruyant à partir de 18h");
 
 Place.create!(name: "Bibliothèque Nationale de France", description: "Le rendez-vous de chercheurs", opening_hours: "9h - 21h", comment: "Attention à éviter l'affluence et la file d'attente de 10h");
+
+Place.create!(name: "La Gaité", description: "Le rendez-vous des geeks", opening_hours: "9h - 19h", comment: "La musique est assez forte au niveau de l'espace café");
+
+Place.create!(name: "Numa", description: "Le rendez-vous de chercheurs", opening_hours: "9h - 20h", comment: "Attention à la panne d'oreiller, peu d'espace disponible donc après 9h ce n'est pas la peine d'essayer");
