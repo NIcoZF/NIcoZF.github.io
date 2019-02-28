@@ -5270,3 +5270,12 @@ Processing by PlacesController#index as HTML
 Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-02-28 17:06:44 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/noemargui/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 349ms (Views: 335.9ms | ActiveRecord: 0.0ms)
+
+
