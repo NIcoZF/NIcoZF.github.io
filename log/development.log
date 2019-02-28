@@ -8018,3 +8018,135 @@ Processing by PlacesController#index as HTML
 Completed 200 OK in 40ms (Views: 36.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-02-28 19:03:46 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 57ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places/2" for ::1 at 2019-02-28 19:03:51 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlace Load (3.9ms)[0m  [1m[34mSELECT  "places".* FROM "places" WHERE "places"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:8
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 73ms (Views: 56.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/places/2" for ::1 at 2019-02-28 19:05:04 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlace Load (0.6ms)[0m  [1m[34mSELECT  "places".* FROM "places" WHERE "places"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:8
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 61ms (Views: 55.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-02-28 19:05:15 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 46ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places/3" for ::1 at 2019-02-28 19:09:08 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlace Load (0.4ms)[0m  [1m[34mSELECT  "places".* FROM "places" WHERE "places"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:8
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Place with 'id'=3):
+  
+app/controllers/places_controller.rb:8:in `show'
+Started GET "/" for ::1 at 2019-02-28 19:09:10 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-02-28 19:14:49 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 148ms (Views: 138.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-02-28 19:15:06 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 43ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-02-28 19:17:58 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/noemargui/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 299ms (Views: 290.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-02-28 19:18:44 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-02-28 19:19:41 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-02-28 19:19:48 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-02-28 19:20:05 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-02-28 19:20:06 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-02-28 19:20:13 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-02-28 19:20:19 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-02-28 19:20:50 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 32ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
