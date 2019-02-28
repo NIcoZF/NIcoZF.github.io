@@ -1,5 +1,7 @@
 {
   "name": "mission",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
