@@ -8,16 +8,63 @@
   <div class="container">
     <h4 class="text-center pb-3 text">Nos lieux répertoriés...</h4>
     <div class="card-columns">
-      <% @places.each do |place| %>
+
       <div class="card text-center">
         <div class="card-body p-5">
-          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= place.id %> </span> • <%= place.name %> </h5>
+          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= "1" %> </span> • <%= "La Felicita" %> </h5>
           <img class="img-fluid" src="http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2018/05/visite-guidee-de-la-felicita-a-station-f_0.jpg" alt="">
-           <p class="card-text"> <%= place.description %> </p>
-          <%= link_to "Afficher le lieu", place_path(place.id), class:"btn btn-outline-dark btn-lg"%><br>
+           <p class="card-text"> <%="Le rendez-vous de la Startup Nation" %> </p>
+          <%= link_to "Afficher le lieu", place_path(1), class:"btn btn-outline-dark btn-lg"%><br>
         </div>
       </div>
-      <% end %>
+
+      <div class="card text-center">
+        <div class="card-body p-5">
+          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= "2" %> </span> • <%= "Bibliothèque Nationale de France" %> </h5>
+          <img class="img-fluid" src="http://osezleslivres.fr/wp-content/uploads/2017/06/la-bnf-francois-mitterrand-recompensee-par-le-label-patrimoine-du-xxe-siecle.jpg" alt="">
+           <p class="card-text"> <%="Le rendez-vous de chercheurs" %> </p>
+          <%= link_to "Afficher le lieu", place_path(2), class:"btn btn-outline-dark btn-lg"%><br>
+        </div>
+      </div>
+
+      <div class="card text-center">
+        <div class="card-body p-5">
+          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= "3" %> </span> • <%= "La Gaité" %> </h5>
+          <img class="img-fluid" src="https://gaite-lyrique.net/storage/2017/06/14/paris_music_club_day_1_c_teddy_morellec_-_la_clef_0014_26_cover.jpg" alt="">
+           <p class="card-text"> <%="Le rendez-vous des geeks" %> </p>
+          <%= link_to "Afficher le lieu", place_path(3), class:"btn btn-outline-dark btn-lg"%><br>
+        </div>
+      </div>
+
+      <div class="card text-center">
+        <div class="card-body p-5">
+          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= "4" %> </span> • <%= "Numa" %> </h5>
+          <img class="img-fluid" src="https://www.usine-digitale.fr/mediatheque/2/2/6/000362622_homePageUne/numa-lieu-de-l-innovation-numerique.jpg" alt="">
+           <p class="card-text"> <%="L'accélérateur historique de la capitale" %> </p>
+          <%= link_to "Afficher le lieu", place_path(4), class:"btn btn-outline-dark btn-lg"%><br>
+        </div>
+      </div>
+
+      <div class="card text-center">
+        <div class="card-body p-5">
+          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= "5" %> </span> • <%= "La macif coworking" %> </h5>
+          <img class="img-fluid" src="https://www.macif.fr/files/live/sites/maciffr/files/maciffr/Professionnels_et_Entreprises/Coworking/agence-paris-place-italie.jpg" alt="">
+           <p class="card-text"> <%="Pour être assuré de travailler" %> </p>
+          <%= link_to "Afficher le lieu", place_path(5), class:"btn btn-outline-dark btn-lg"%><br>
+        </div>
+      </div>
+
+      <div class="card text-center">
+        <div class="card-body p-5">
+          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= "6" %> </span> • <%= "LA recyclerie" %> </h5>
+          <img class="img-fluid" src="" alt="">
+           <p class="card-text"> <%="#" %> </p>
+          <%= link_to "Afficher le lieu", place_path(6), class:"btn btn-outline-dark btn-lg"%><br>
+        </div>
+      </div>
+
+
+      </div>
     </div>
 
   </div>
