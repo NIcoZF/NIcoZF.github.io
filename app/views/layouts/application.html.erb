@@ -16,7 +16,7 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <%= link_to root_path, class: "navbar-brand" do %>
           <i class="fas fa-globe-africa"></i> Nomads in Paris
         <% end %>
@@ -46,13 +46,11 @@
     <%= yield %>
 
     <!-- Footer -->
-    <footer class="text-center text-secondary p-5">
+    <footer class="text-center text-secondary">
       <div class="my-4">
-        <%= link_to root_path, class: "h1 text-decoration-none" do %>
-          <i class="fas fa-globe-africa"></i> Nomads in Paris
-        <% end %>
+        <i class="fas fa-globe-africa"></i> Nomads in Paris
       </div>
-      <p class="h5 mb-5">Made with <i class="fas fa-heart"></i> by <a href="#" class="">Nico & Nono</a></p>
+      <p class="h6 mb-5">Made with <i class="fas fa-heart"></i> by <a href="https://github.com/NIcoZF" class="text-danger">Nico</a> & <a href="https://github.com/noemargui" class="text-danger">Nono</a></p>
     </footer>
 
     <!-- Chargement des scripts en fin de body -->
