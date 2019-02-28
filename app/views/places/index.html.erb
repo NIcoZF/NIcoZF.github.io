@@ -6,65 +6,105 @@
 <div class="bg-light p-5">
 
   <div class="container">
-    <h4 class="text-center pb-3 text">Nos lieux répertoriés...</h4>
+    <h4 class="text-center pb-3 text">Nos lieux préférés...</h4>
     <div class="card-columns">
 
-      <div class="card text-center">
-        <div class="card-body p-5">
-          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= "1" %> </span> • <%= "La Felicita" %> </h5>
-          <img class="img-fluid" src="http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2018/05/visite-guidee-de-la-felicita-a-station-f_0.jpg" alt="">
-           <p class="card-text"> <%="Le rendez-vous de la Startup Nation" %> </p>
-          <%= link_to "Afficher le lieu", place_path(1), class:"btn btn-outline-dark btn-lg"%><br>
+      <div class="card">
+        <img class="card-img-top" src="http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2018/05/visite-guidee-de-la-felicita-a-station-f_0.jpg" alt="Pic">
+        <div class="card-body">
+          <h3 class="card-title">La Felicità</h3>
+          <p class="card-text">Le rendez-vous de la Startup Nation.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body text-center">
+          <%= link_to "Voir le lieu", place_path(1), class:"btn btn-outline-dark"%>
         </div>
       </div>
 
-      <div class="card text-center">
-        <div class="card-body p-5">
-          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= "2" %> </span> • <%= "Bibliothèque Nationale de France" %> </h5>
-          <img class="img-fluid" src="http://osezleslivres.fr/wp-content/uploads/2017/06/la-bnf-francois-mitterrand-recompensee-par-le-label-patrimoine-du-xxe-siecle.jpg" alt="">
-           <p class="card-text"> <%="Le rendez-vous de chercheurs" %> </p>
-          <%= link_to "Afficher le lieu", place_path(2), class:"btn btn-outline-dark btn-lg"%><br>
+      <div class="card">
+        <img class="card-img-top" src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fimg.chefdentreprise.com%2FImg%2FBREVE%2F2015%2F6%2F256771%2Fnuma-comment-progresser-ensemble-F.jpg&f=1" alt="Pic">
+        <div class="card-body">
+          <h3 class="card-title">Café NUMA</h3>
+          <p class="card-text">L'accélérateur historique de la capitale.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body text-center">
+          <%= link_to "Voir le lieu", place_path(4), class:"btn btn-outline-dark"%>
         </div>
       </div>
 
-      <div class="card text-center">
-        <div class="card-body p-5">
-          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= "3" %> </span> • <%= "La Gaité" %> </h5>
-          <img class="img-fluid" src="https://gaite-lyrique.net/storage/2017/06/14/paris_music_club_day_1_c_teddy_morellec_-_la_clef_0014_26_cover.jpg" alt="">
-           <p class="card-text"> <%="Le rendez-vous des geeks" %> </p>
-          <%= link_to "Afficher le lieu", place_path(3), class:"btn btn-outline-dark btn-lg"%><br>
+      <div class="card">
+        <img class="card-img-top" src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.perraultarchitecture.com%2Fdata%2Fprojet%2Ffiche%2F1892%2Flarge_bnf_0000-int_gf_50_2bd9b.jpg&f=1" alt="Pic">
+        <div class="card-body">
+          <h3 class="card-title">BnF Bibliothèque</h3>
+          <p class="card-text">Le rendez-vous des chercheurs.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body text-center">
+          <%= link_to "Voir le lieu", place_path(2), class:"btn btn-outline-dark"%>
         </div>
       </div>
 
-      <div class="card text-center">
-        <div class="card-body p-5">
-          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= "4" %> </span> • <%= "Numa" %> </h5>
-          <img class="img-fluid" src="https://www.usine-digitale.fr/mediatheque/2/2/6/000362622_homePageUne/numa-lieu-de-l-innovation-numerique.jpg" alt="">
-           <p class="card-text"> <%="L'accélérateur historique de la capitale" %> </p>
-          <%= link_to "Afficher le lieu", place_path(4), class:"btn btn-outline-dark btn-lg"%><br>
+      <div class="card">
+        <img class="card-img-top" src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn-parismatch.ladmedia.fr%2Fvar%2Fnews%2Fstorage%2Fimages%2Fparis-match%2Fvivre%2Fvoyage%2Fla-recyclerie-temple-de-nature-urbaine-647292%2F6413226-1-fre-FR%2FLa-REcyclerie-temple-de-nature-urbaine.jpg&f=1" alt="Pic">
+        <div class="card-body">
+          <h3 class="card-title">La REcyclerie</h3>
+          <p class="card-text">Le rendez-vous des mecs qui recyclent.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body text-center">
+          <%= link_to "Voir le lieu", place_path(6), class:"btn btn-outline-dark"%>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img class="card-img-top" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fgaite-lyrique.net%2Fstorage%2F2018%2F04%2F04%2FF.A.M.E%2520-%2520soiree%2520ouverture%2520part%25202%2520%C2%A9%2520Teddy%2520Morellec_0023.jpg&f=1" alt="Pic">
+        <div class="card-body">
+          <h3 class="card-title">Gaîté Lyrique</h3>
+          <p class="card-text">Le rendez-vous des geeks.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body text-center">
+          <%= link_to "Voir le lieu", place_path(3), class:"btn btn-outline-dark"%>
         </div>
       </div>
 
-      <div class="card text-center">
-        <div class="card-body p-5">
-          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= "5" %> </span> • <%= "La macif coworking" %> </h5>
-          <img class="img-fluid" src="https://www.macif.fr/files/live/sites/maciffr/files/maciffr/Professionnels_et_Entreprises/Coworking/agence-paris-place-italie.jpg" alt="">
-           <p class="card-text"> <%="Pour être assuré de travailler" %> </p>
-          <%= link_to "Afficher le lieu", place_path(5), class:"btn btn-outline-dark btn-lg"%><br>
+      <div class="card">
+        <img class="card-img-top" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn1.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F06%2F20130604-Fueled-5309-2571738703-O.jpg&f=1" alt="Pic">
+        <div class="card-body">
+          <h3 class="card-title">Macif Coworking</h3>
+          <p class="card-text">Le rendez-vous des mecs qui assurent !</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body text-center">
+          <%= link_to "Voir le lieu", place_path(5), class:"btn btn-outline-dark"%>
         </div>
       </div>
 
-      <div class="card text-center">
-        <div class="card-body p-5">
-          <h5 class="card-title h2"> <span class="font-weight-bold"> <%= "6" %> </span> • <%= "LA recyclerie" %> </h5>
-          <img class="img-fluid" src="" alt="">
-           <p class="card-text"> <%="#" %> </p>
-          <%= link_to "Afficher le lieu", place_path(6), class:"btn btn-outline-dark btn-lg"%><br>
-        </div>
-      </div>
-
-
-      </div>
     </div>
 
   </div>
