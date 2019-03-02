@@ -13,3 +13,7 @@ Place.create!(name: "Bibliothèque Nationale de France", description: "Le rendez
 Place.create!(name: "La Gaité", description: "Le rendez-vous des geeks", opening_hours: "9h - 19h", comment: "La musique est assez forte au niveau de l'espace café");
 
 Place.create!(name: "Numa", description: "Le rendez-vous de chercheurs", opening_hours: "9h - 20h", comment: "Attention à la panne d'oreiller, peu d'espace disponible donc après 9h ce n'est pas la peine d'essayer");
+
+Place.create!(name: "Macif Coworking", description: "Le rendez-vous des mecs qui assurent", opening_hours: "9h - 19h", comment: "Peu de places, premier arrivé premier servi");
+
+Place.create!(name: "La REcyclerie", description: "Le rendez-vous des mecs qui recyclent", opening_hours: "9h - 20h", comment: "peu d'espace disponible donc après 9h ce n'est pas la peine d'essayer");
